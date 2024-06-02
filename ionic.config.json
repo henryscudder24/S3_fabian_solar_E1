@@ -1,0 +1,7 @@
+{
+  "name": "SolarSolutions",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
