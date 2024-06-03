@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+
 import { IonicModule } from '@ionic/angular';
-import { HomePageRoutingModule } from './home-routing.module';
-import { HomePage } from './home.page';
-import { AnimatedComponent } from '../animated-component/animated-component.component';
+
+import { LoginPageRoutingModule } from './login-routing.module';
+import { LoginPage } from './login.page';
 
 // Import Angular Material Modules
 import { MatButtonModule } from '@angular/material/button';
@@ -17,15 +18,12 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule,
+    LoginPageRoutingModule,
     MatButtonModule,
     MatInputModule,
     MatCardModule,
     MatFormFieldModule
   ],
-  declarations: [
-    HomePage,
-    AnimatedComponent  // Declara el componente animado aquí
-  ]
+  declarations: [LoginPage]
 })
-export class HomePageModule { }
+export class LoginPageModule { }

@@ -1,20 +1,32 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Solar Solutions</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content>
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12" size-md="6">
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>Workspace</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <app-animated-component></app-animated-component>
+            <ion-button expand="full" routerLink="/upload">Subir Documentos</ion-button>
+            <ion-button expand="full" routerLink="/files">Repositorio</ion-button>
+            <ion-button expand="full" routerLink="/login">Iniciar Sesión</ion-button>
+          </mat-card-content>
+        </mat-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
+
+
+
+<!-- comentar-->
